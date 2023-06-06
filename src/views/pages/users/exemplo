@@ -1,0 +1,21 @@
+
+<template>
+    <div class="card flex flex-wrap justify-content-center gap-3">
+        <span class="p-input-icon-left">
+            <i class="pi pi-search" />
+            <InputText v-model="value1" placeholder="Search" />
+            </span>
+            
+            <span class="p-input-icon-right">
+                <i class="pi pi-spin pi-spinner" />
+            <InputText v-model="value2" />
+        </span>
+    </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value1 = ref(null);
+const value2 = ref(null);
+</script>
